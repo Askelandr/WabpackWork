@@ -1,25 +1,10 @@
+import json from "../json/json.json";
 export default function selectPerson(e) {
   let el = document.querySelector("#person");
   let avatar = el.querySelector("#person-image");
   let text = el.querySelector("#person-text");
   let fullName = el.querySelector("#person-name");
-  let person = {
-    person1: {
-      avatar: "../img/nataly.JPG",
-      text: "Это очень крутой сайт. Я впервые так близко оказалась к звездам. Это просто удивительно. А информация про астероиды просто завараживает.",
-      fullName: "Борисова Наталья",
-    },
-    person2: {
-      avatar: "../img/ekaterina.jpg",
-      text: "Меня попросили проанализировать работу этого сайта. Работа оказалась очень увлекательной. А как шикарно фильтруются даты! Рекомендую.",
-      fullName: "Шаламова Екатерина",
-    },
-    person3: {
-      avatar: "../img/grishinsvit.jpg",
-      text: "Совершенно обыкновенный сайт, да и вообще HTML это же прошлый век. Рекомендую посмотреть реализацию данного контента на других площадках.",
-      fullName: "Сергей Гришин",
-    },
-  };
+  let person = json[0];
 
   chenge1.style.color = "#a19ea8";
   chenge2.style.color = "#a19ea8";

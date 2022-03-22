@@ -5,9 +5,10 @@ import selectPerson from "./js/selectperson";
 import validInput from "./js/validinput";
 import SliderFactory from "./js/slider";
 import "./css/style.css";
+import json from "./json/json";
 
 /**Блок инициализации для секции tab */
-
+console.log(json);
 let epic = document.querySelector("#epic");
 
 let fotoDay = document.querySelector("#foto-day");
