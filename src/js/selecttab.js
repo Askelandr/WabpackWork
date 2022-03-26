@@ -1,5 +1,5 @@
 export default function selectTab(e) {
-  let elem = document.querySelector(".app-information");
+  let elem = document.querySelector(".app-information__container");
   let menu = {
     epic: `<svg class="svg-icon" data-name="Layer 1" id="Layer_1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
     <title/>
@@ -106,15 +106,15 @@ export default function selectTab(e) {
   marsWeatherIcon.style.fill = "rgb(161,158,168)";
   meteorsIcon.style.fill = "rgb(161,158,168)";
 
-  let elemSlicker = document.querySelector(".progresstab-slicker");
+  let elemSlicker = document.querySelector(".progresstab__slicker");
   elemSlicker.remove();
   let slicker = document.createElement(`div`);
-  slicker.className = "progresstab-slicker";
+  slicker.className = "progresstab__slicker";
   e.currentTarget.append(slicker);
 
   let elemMenu = elem.querySelector(".svg-menu");
-  let elemTitle = elem.querySelector(".name");
-  let elemText = elem.querySelector(".in-menu-text");
+  let elemTitle = elem.querySelector(".main-menu__name");
+  let elemText = elem.querySelector(".main-menu__text");
 
   if (e.currentTarget.id === "epic") {
     epicIcon.style.fill = "rgb(68, 219, 181)";

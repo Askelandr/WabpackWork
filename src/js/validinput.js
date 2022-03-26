@@ -7,11 +7,13 @@ export default function validInput(selectorInput, selectorError) {
   let email;
   let inputGetEmail = document.querySelector(selectorInput);
   let errorEmailInput = document.querySelector(selectorError);
+
   let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
   let myMail = inputGetEmail.value;
+
   let valid = re.test(myMail);
 
-  if (inputGetEmail.value === "") {
+  if (myMail === "") {
     errorEmailInput.innerHTML = "Поле должно быть заполнено";
     errorEmailInput.style.opacity = 1;
   } else if (!valid) {

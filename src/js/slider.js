@@ -19,8 +19,8 @@ export default class SliderFactory {
    */
   start = function (id, url) {
     let elemId = document.querySelector("#" + id);
-    this.leftButton = elemId.querySelector(".left-button");
-    this.rightButton = elemId.querySelector(".right-button");
+    this.leftButton = elemId.querySelector("#left-button");
+    this.rightButton = elemId.querySelector("#right-button");
     this.imgSlider = elemId.querySelector(".img-slider");
     this.imgSlider.src = url;
     elemId.addEventListener("click", (e) => {
