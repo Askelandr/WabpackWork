@@ -52,9 +52,10 @@ let ImgSlider = [
   "https://f.vividscreen.info/soft/f0708836466ed29ca8ed153d1b81d11b/Rings-Of-Saturn-1920x1200.jpg",
   "https://interesnyefakty.org/wp-content/uploads/Planeta-Pluton-1.jpg",
 ];
-
+let startImg =
+  "https://i.pinimg.com/736x/01/c6/19/01c6195a2bb7bfd7b73cd9a9a783f70b.jpg";
 let slider1 = new SliderFactory(ImgSlider);
-slider1.start("slider1", ImgSlider[2]);
+slider1.start("slider1", startImg);
 
 /**Инициализация секции подписки */
 let validInputFooter = document.querySelector("#btn-footer");
