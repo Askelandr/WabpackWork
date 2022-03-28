@@ -18,19 +18,24 @@ module.exports = {
   ],
   module: {
     rules: [
+      // {
+      //   test: /\.(html)$/,
+      //   use: ["html-loader"],
+      // },
       {
         test: /\.css$/,
         use: [`style-loader`, `css-loader`],
       },
+
       {
         test: /\.(png|jpe?g|svg|gif)$/,
         use: [`file-loader`],
       },
-      {
-        test: /\.(jpg|png|gif)$/,
-        include: /img/,
-        loader: "url",
-      },
+      // {
+      //   test: /\.(jpg|png|gif)$/,
+      //   include: /img/,
+      //   loader: "url",
+      // },
       {
         test: /\.s[ac]ss$/i,
         use: [

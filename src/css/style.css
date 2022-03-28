@@ -376,6 +376,23 @@ body {
   font-size: 12px;
   margin-right: 4px;
 }
+.footer__svg {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  stroke-linejoin: round;
+  stroke-miterlimit: 2;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+.footer__svg__path {
+  fill: #a19ea8;
+  fill-rule: nonzero;
+}
+.footer__svg__pathin {
+  fill: #2d312f;
+  fill-rule: nonzero;
+}
 
 /* ------------------------Кнопка внизу--------------------------------- */
 input:focus {
