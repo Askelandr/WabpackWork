@@ -1,21 +1,13 @@
-export default function showSlides(n) {
+export default function showSlides(n, array) {
   let slideIndex = n;
 
   /* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
-  let slides = document.getElementsByClassName("item");
-
-  /* Проверяем количество слайдов: */
-  if (n > slides.length) {
-    slideIndex = slides.length;
-  }
-  if (n < 1) {
-    slideIndex = 1;
-  }
+  // let slides = document.getElementsByClassName("item");
 
   /* Проходим по каждому слайду в цикле for: */
-  for (let slide of slides) {
+  for (let slide of array) {
     slide.style.display = "none";
   }
   /* Делаем элемент блочным: */
-  slides[slideIndex - 1].style.display = "block";
+  array[slideIndex].style.display = "block";
 }

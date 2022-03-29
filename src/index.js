@@ -60,13 +60,13 @@ validInputFooter.addEventListener("click", (e) => {
 /**Инициализация нового слайдера */
 /* Устанавливаем стартовый индекс слайда по умолчанию: */
 let slideIndex = 0;
-/* Вызshowываем функцию, которая реализована ниже: */
-showSlides(slideIndex);
+/* Инициализируем все слайды */
 let slides = document.getElementsByClassName("item");
+showSlides(slideIndex, slides);
 
 let newNextSlide = document.querySelector(".next");
 newNextSlide.addEventListener("click", (e) => {
-  if (slideIndex === slides.length) {
+  if (slideIndex === slides.length - 1) {
     return;
   }
   nextSlide();
@@ -82,10 +82,10 @@ newPreviousSlide.addEventListener("click", (e) => {
 
 /* Увеличиваем индекс на 1 — показываем следующий слайд: */
 function nextSlide() {
-  showSlides((slideIndex += 1));
+  showSlides((slideIndex += 1), slides);
 }
 
 /* Уменьшаем индекс на 1 — показываем предыдущий слайд: */
 function previousSlide() {
-  showSlides((slideIndex -= 1));
+  showSlides((slideIndex -= 1), slides);
 }
