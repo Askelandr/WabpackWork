@@ -6,6 +6,7 @@ import selectPerson from "./js/selectperson";
 import validInput from "./js/validinput";
 import SliderFactory from "./js/slider";
 import json from "./json/json.json";
+import createNewSlider from "./js/createnewslider";
 import "./css/style.css";
 
 /**Блок инициализации для секции tab */
@@ -57,7 +58,9 @@ validInputFooter.addEventListener("click", (e) => {
   validInput("#input-footer", "#email-error-footer");
 });
 
-/**Инициализация нового слайдера */
+/*Инициализация нового слайдера */
+
+createNewSlider();
 /* Устанавливаем стартовый индекс слайда по умолчанию: */
 let slideIndex = 0;
 /* Инициализируем все слайды */
